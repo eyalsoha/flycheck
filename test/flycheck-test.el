@@ -4779,7 +4779,7 @@ The manifest path is relative to
   (let ((flycheck-disabled-checkers '(yaml-yamlyaml)))
     (flycheck-ert-should-syntax-check
      "language/yaml.yaml" 'yaml-mode
-     '(3 1 warning "missing document start "---" (document-start)"
+     '(3 1 warning "missing document start \"---\" (document-start)"
          :checker yaml-yamllint))
     (flycheck-ert-should-syntax-check
      "language/yaml.yaml" 'yaml-mode
